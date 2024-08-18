@@ -1,0 +1,8 @@
+order_amount = float(input("The amount is: "))
+
+def apply_discount(order_amount):
+    discount = order_amount * 0.1
+    return order_amount - discount
+
+final_price = apply_discount(order_amount)
+print(final_price)
