@@ -1,0 +1,15 @@
+sales = [200, 600, 150, 800, 300]
+
+def generate_report(sales):
+    total_sales = 0
+    for sale in sales:
+        if sale > 500:
+            print(f"Sale of ${sale} is over $500!")
+        else:
+            print(f"Sale of ${sale}")
+        total_sales += sale
+    return total_sales
+
+total_sales = generate_report(sales)
+
+print("Total sales for the month is:", total_sales)
